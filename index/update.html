@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Обновление/Удаление оборудования</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Система учета оборудования</h1>
+    <nav>
+      <ul>
+        <li><a href="search.html">Поиск оборудования</a></li>
+        <li><a href="add.html">Добавить оборудование</a></li>
+        <li><a href="update.html">Состояние оборудование</a></li>
+        <li><a href="reports.html">Отчеты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Обновление/Удаление оборудования</h2>
+      <form id="update-equipment-form">
+        <input type="hidden" id="id" name="id">
+
+        <label for="name">Название:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="type">Тип:</label>
+        <input type="text" id="type" name="type"><br><br>
+
+        <label for="description">Описание:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+
+        <label for="issue_date">Дата выдачи:</label>
+        <input type="date" id="issue_date" name="issue_date"><br><br>
+
+        <label for="status">Статус:</label>
+        <select id="status" name="status">
+          <option value="доступно">Доступно</option>
+          <option value="выдано">Выдано</option>
+          <option value="в ремонте">В ремонте</option>
+        </select><br><br>
+
+        <label for="customer">Заказчик:</label>
+        <input type="text" id="customer" name="customer"><br><br>
+
+        <button type="submit">Обновить</button>
+        <button type="button" id="delete-button">Удалить</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="update.js"></script>
+</body>
+</html>

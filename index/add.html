@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Добавление оборудования</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Система учета оборудования</h1>
+    <nav>
+      <ul>
+        <li><a href="search.html">Поиск оборудования</a></li>
+        <li><a href="add.html">Добавить оборудование</a></li>
+        <li><a href="update.html">Состояние оборудование</a></li>
+        <li><a href="reports.html">Отчеты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Добавление оборудования</h2>
+      <form id="add-equipment-form">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br><br>
+
+        <label for="name">Название:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="type">Тип:</label>
+        <input type="text" id="type" name="type" required><br><br>
+
+        <label for="description">Описание:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+
+        <label for="issue_date">Дата выдачи:</label>
+        <input type="date" id="issue_date" name="issue_date"><br><br>
+
+        <label for="customer">Заказчик:</label>
+        <input type="text" id="customer" name="customer"><br><br>
+
+        <button type="submit">Добавить</button>
+      </form>
+    </section>
+  </main>
+  <script src="add.js"></script>
+</body>
+</html>

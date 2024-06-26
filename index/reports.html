@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Отчеты</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Система учета оборудования</h1>
+    <nav>
+      <ul>
+        <li><a href="search.html">Поиск оборудования</a></li>
+        <li><a href="add.html">Добавить оборудование</a></li>
+        <li><a href="update.html">Состояние оборудование</a></li>
+        <li><a href="reports.html">Отчеты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Отчеты</h2>
+      <form id="report-form">
+        <label for="date-from">Дата начала:</label>
+        <input type="date" id="date-from" name="date-from"><br><br>
+
+        <label for="date-to">Дата окончания:</label>
+        <input type="date" id="date-to" name="date-to"><br><br>
+
+        <button type="submit">Сгенерировать отчет</button>
+      </form>
+
+      <div id="report-results">
+        <h2>Результаты отчета:</h2>
+      </div>
+    </section>
+  </main>
+
+  <script src="reports.js"></script>
+</body>
+</html>
