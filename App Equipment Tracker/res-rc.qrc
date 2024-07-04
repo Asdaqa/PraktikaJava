@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>logo/faq.svg</file>
+    <file>logo/logopen72.svg</file>
+  </qresource>
+</RCC>
