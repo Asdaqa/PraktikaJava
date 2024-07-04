@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+ }
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ }
+
+ a {
+  text-decoration: none;
+  color: inherit;
+ }
+
+table {
+  width: 100%;
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #000; 
+}
+
+th:first-child {
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+}

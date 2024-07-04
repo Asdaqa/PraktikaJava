@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Вход</title>
+ <link rel="stylesheet" href="style/authentication.css">
+</head>
+<body>
+ <div class="container">
+    <h1>Вход в систему</h1>
+    <h2>Введите ваши данные</h2>
+  <form>
+   <label>Пользователь:</label>
+   <input type="text" name="username">
+   <label>Пароль:</label>
+   <input type="password" name="password">
+  </form>
+  <button class="login-button" onclick="validateLogin()">Войти</button>
+  <p>Перед входом убедитесь в правильности набора Ваших данных</p>
+  <p>— Вас еще нету в системе? Пройдите регистрацию</p>
+  <a href="registration.html"><button class="register-button">Зарегистрироваться</button></a>
+ </div>
+ <script src="authentication.js"></script>
+</body>
+</html>

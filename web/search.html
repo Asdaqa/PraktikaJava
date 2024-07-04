@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Поиск оборудования</title>
+ <link rel="stylesheet" href="style/search.css">
+</head>
+<body>
+ <div class="container">
+    <a href="search.html">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo" width="50">
+              <h1>Equipment Tracker</h1>
+          </div>
+       </a>
+  
+  <form>
+   <p>Задайте фильтры для сортировки данных:</p>
+   <input type="text" placeholder="Оборудование">
+   <input type="text" placeholder="Статус оборудования">
+   <input type="text" placeholder="Заказчики">
+   <input type="text" placeholder="Ответственные лица">
+   <button class="button black">Поиск</button>
+   <button class="button red">Очистить</button>
+  </form>
+  
+  <table>
+   <tr>
+    <th>ID</th>
+    <th>Название</th>
+    <th>Серийный номер</th>
+    <th><a href="status_equp.html">Статус (ID)</a></th>
+    <th><a href="customer.html">Заказчик (ID)</a></th>
+    <th><a href="respon_person.html">Ответственный (ID)</a></th>
+   </tr>
+   <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+   </tr>
+   <!-- Вставьте данные из базы данных здесь -->
+  </table>
+ </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Регистрация</title>
+ <link rel="stylesheet" href="style/authentication.css">
+</head>
+<body>
+ <div class="container">
+    
+    <h1>Регистрация</h1>
+    <h2>Придумайте данные для входа</h2>
+  <form>
+   <label>Пользователь:</label>
+   <input type="text" name="username">
+   <label>Пароль:</label>
+   <input type="password" name="password">
+  </form>
+  <button class="register-button" onclick="validateRegist()">Зарегистрироваться</button>
+  <p>Перед завершением регистрации убедитесь, что</p>
+  <p>вы запомнили данные для входа</p>
+ </div>
+ <footer class="footer">
+    <div class="faq">
+      <img src="image/faq.png" alt="FAQ Icon">
+      <span>FAQ</span>
+    </div>
+    <div class="copyright">
+      <span>© 2024 "Mirage"</span>
+    </div>
+  </footer>
+</body>
+<script src="authentication.js"></script>
+</html>
